@@ -1,4 +1,4 @@
-framework module sqlite {
-    umbrella header "sqlite.h"
+framework module sqlite3 {
+    umbrella header "sqlite3.h"
     export *
 }

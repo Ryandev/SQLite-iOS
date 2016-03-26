@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B790C6101CA6014900350F23"
-               BuildableName = "sqlite.framework"
-               BlueprintName = "sqlite"
-               ReferencedContainer = "container:sqlite.xcodeproj">
+               BuildableName = "sqlite3.framework"
+               BlueprintName = "sqlite3"
+               ReferencedContainer = "container:sqlite3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B790C6101CA6014900350F23"
+            BuildableName = "sqlite.framework"
+            BlueprintName = "sqlite"
+            ReferencedContainer = "container:sqlite.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B790C6101CA6014900350F23"
-            BuildableName = "sqlite.framework"
-            BlueprintName = "sqlite"
-            ReferencedContainer = "container:sqlite.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B790C6101CA6014900350F23"
-            BuildableName = "sqlite.framework"
-            BlueprintName = "sqlite"
-            ReferencedContainer = "container:sqlite.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
