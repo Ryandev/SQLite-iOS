@@ -158,7 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mv ${SRCROOT}/inc/sqlite3.h ${SRCROOT}/inc/sqlite.h";
+			shellScript = "mv ${SRCROOT}/inc/sqlite3.h ${SRCROOT}/inc/sqlite.h\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
