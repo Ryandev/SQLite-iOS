@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B790C6201CA602BD00350F23 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = B790C61D1CA602BD00350F23 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B790C6211CA602BD00350F23 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = B790C61F1CA602BD00350F23 /* sqlite3.c */; };
+		B790C6271CA6B3AE00350F23 /* sqlite.h in Headers */ = {isa = PBXBuildFile; fileRef = B790C6261CA6B3AE00350F23 /* sqlite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B790C6111CA6014900350F23 /* sqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B790C61D1CA602BD00350F23 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		B790C61F1CA602BD00350F23 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		B790C6231CA602D100350F23 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B790C6261CA6B3AE00350F23 /* sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		B790C61C1CA602BD00350F23 /* inc */ = {
 			isa = PBXGroup;
 			children = (
-				B790C61D1CA602BD00350F23 /* sqlite3.h */,
+				B790C6261CA6B3AE00350F23 /* sqlite.h */,
 			);
 			path = inc;
 			sourceTree = "<group>";
@@ -78,7 +78,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B790C6201CA602BD00350F23 /* sqlite3.h in Headers */,
+				B790C6271CA6B3AE00350F23 /* sqlite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +89,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B790C6191CA6014900350F23 /* Build configuration list for PBXNativeTarget "sqlite" */;
 			buildPhases = (
+				B790C6251CA6B38700350F23 /* Move sqlite3.h to sqlite.h */,
 				B790C60C1CA6014900350F23 /* Sources */,
 				B790C60D1CA6014900350F23 /* Frameworks */,
 				B790C60E1CA6014900350F23 /* Headers */,
@@ -143,6 +144,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B790C6251CA6B38700350F23 /* Move sqlite3.h to sqlite.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Move sqlite3.h to sqlite.h";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mv ${SRCROOT}/inc/sqlite3.h ${SRCROOT}/inc/sqlite.h";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B790C60C1CA6014900350F23 /* Sources */ = {
